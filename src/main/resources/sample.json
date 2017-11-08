@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "jasper",
+        "last": "walker"
+      },
+      "location": {
+        "street": "4879 forbury road",
+        "city": "greymouth",
+        "state": "marlborough",
+        "postcode": 53371
+      },
+      "email": "jasper.walker@example.com",
+      "login": {
+        "username": "orangeelephant943",
+        "password": "sherry",
+        "salt": "JlUIUClv",
+        "md5": "f60f6904e3d49d3acf8f9dd4b70b6850",
+        "sha1": "86737bcb8c907b4fecc6845810a47bd54dbb1238",
+        "sha256": "ba371f05502256a0aec971ebff3996542b5b2326670a132159847cc3a04f9af1"
+      },
+      "dob": "1978-12-11 22:17:45",
+      "registered": "2004-02-15 23:56:15",
+      "phone": "(859)-175-6224",
+      "cell": "(978)-103-2852",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/31.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/31.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/31.jpg"
+      },
+      "nat": "NZ"
+    }
+  ],
+  "info": {
+    "seed": "24938e5697dee966",
+    "results": 1,
+    "page": 1,
+    "version": "1.1"
+  }
+}
