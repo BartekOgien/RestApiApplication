@@ -32,6 +32,13 @@ public class SimpleEmailService {
         mailMessage.setTo(mail.getMailTo());
         mailMessage.setSubject(mail.getSubject());
         mailMessage.setText(mail.getMessage());
+
+        if(mail.getToCc() != null || !(mail.getToCc().equals(""))) {
+            mailMessage.setCc(mail.getToCc());
+        }
+        else {
+            LOGGER.info("Dont have any cc address");
+        }
         return mailMessage;
     }
 }
