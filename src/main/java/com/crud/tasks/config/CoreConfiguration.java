@@ -32,14 +32,14 @@ public class CoreConfiguration implements WebMvcConfigurer {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).
                 select()
-                .apis(RequestHandlerSelectors.any())
+                .apis(RequestHandlerSelectors.basePackage("com.crud.tasks.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
 
     @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
-        
+
     }
 
     @Override
