@@ -33,7 +33,7 @@ public class SimpleEmailService {
         mailMessage.setSubject(mail.getSubject());
         mailMessage.setText(mail.getMessage());
 
-        if(mail.getToCc() != null || !(mail.getToCc().equals(""))) {
+        if(mail.getToCc() != null && !mail.getToCc().isEmpty()) {
             mailMessage.setCc(mail.getToCc());
         }
         else {
