@@ -20,10 +20,10 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class TrelloControllerTest {
     @InjectMocks
-    TrelloController trelloController;
+    private TrelloController trelloController;
 
     @Mock
-    TrelloFacade trelloFacade;
+    private TrelloFacade trelloFacade;
 
     @Test
     public void shouldGetTrelloBoards() {

@@ -21,16 +21,16 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class TrelloServiceTest {
     @InjectMocks
-    TrelloService trelloService;
+    private TrelloService trelloService;
 
     @Mock
-    TrelloClient trelloClient;
+    private TrelloClient trelloClient;
 
     @Mock
-    SimpleEmailService simpleEmailService;
+    private SimpleEmailService simpleEmailService;
 
     @Mock
-    AdminConfig adminConfig;
+    private AdminConfig adminConfig;
 
     @Test
     public void shouldFetchTrelloBoards() {

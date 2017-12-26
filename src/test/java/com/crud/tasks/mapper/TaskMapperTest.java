@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 @RunWith(MockitoJUnitRunner.class)
 public class TaskMapperTest {
     @InjectMocks
-    TaskMapper taskMapper;
+    private TaskMapper taskMapper;
 
     @Test
     public void shouldMapToTask() {

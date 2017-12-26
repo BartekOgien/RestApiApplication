@@ -15,13 +15,13 @@ import static org.mockito.Mockito.when;
 @RunWith(MockitoJUnitRunner.class)
 public class TaskNotFoundExceptionTest {
     @InjectMocks
-    TaskController taskController;
+    private TaskController taskController;
 
     @Mock
-    DBservice dBservice;
+    private DBservice dBservice;
 
     @Mock
-    TaskMapper taskMapper;
+    private TaskMapper taskMapper;
 
     @Test(expected = TaskNotFoundException.class)
     public void shouldThrowTaskNotFoundException() throws TaskNotFoundException{

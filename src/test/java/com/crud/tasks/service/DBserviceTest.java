@@ -20,10 +20,10 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
 @RunWith(MockitoJUnitRunner.class)
 public class DBserviceTest {
     @InjectMocks
-    DBservice dBservice;
+    private DBservice dBservice;
 
     @Mock
-    TaskRepository taskRepository;
+    private TaskRepository taskRepository;
 
     @Test
     public void shoulGetAllTasks() {

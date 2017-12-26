@@ -22,13 +22,13 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
 @RunWith(MockitoJUnitRunner.class)
 public class TaskControllerTest {
     @InjectMocks
-    TaskController taskController;
+    private TaskController taskController;
 
     @Mock
-    DBservice dBservice;
+    private DBservice dBservice;
 
     @Mock
-    TaskMapper taskMapper;
+    private TaskMapper taskMapper;
 
     @Test
     public void shouldGetTasks() {
