@@ -1,9 +1,6 @@
 package com.crud.tasks.controller;
 
-import com.crud.tasks.domain.CreatedTrelloCardDto;
-import com.crud.tasks.domain.TrelloBoardDto;
-import com.crud.tasks.domain.TrelloCardDto;
-import com.crud.tasks.domain.TrelloListDto;
+import com.crud.tasks.domain.*;
 import com.crud.tasks.trello.facade.TrelloFacade;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,6 +21,7 @@ public class TrelloControllerTest {
 
     @Mock
     private TrelloFacade trelloFacade;
+
 
     @Test
     public void shouldGetTrelloBoards() {

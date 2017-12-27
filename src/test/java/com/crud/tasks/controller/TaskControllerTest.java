@@ -30,6 +30,18 @@ public class TaskControllerTest {
     @Mock
     private TaskMapper taskMapper;
 
+    @Test(expected = TaskNotFoundException.class)
+    public void shouldThrowTaskNotFoundException() throws TaskNotFoundException{
+        //Given
+        TaskDto taskDto = new TaskDto(1, "Title", "Content");
+        Task task = new Task(1, "Title", "Content");
+        Long taskId = 1L;
+        when(dBservice.getTask(taskId)).thenThrow(TaskNotFoundException.class);
+        when(taskMapper.mapToTaskDto(task)).thenReturn(taskDto);
+        //When
+        TaskDto resultTask = taskController.getTask(taskId);
+    }
+
     @Test
     public void shouldGetTasks() {
         //Given
