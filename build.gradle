@@ -28,6 +28,7 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '1.5.8.RELEASE'
 	compile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('mysql:mysql-connector-java')
