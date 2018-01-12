@@ -43,4 +43,16 @@ public class MailCreatorService {
         context.setVariable("application_funcionality", funcionality);
         return templateEngine.process("mail/created-trello-card-mail", context);
     }
+
+    public String buildTaskNumbersEmail(String message) {
+        Context context = new Context();
+        context.setVariable("message", message);
+        context.setVariable("tasks_url", "http://localhost:8888/tasks_frontend");
+        context.setVariable("button", "Visit our website");
+        context.setVariable("goodbye", "Kodilla team");
+        context.setVariable("info_details", infoConfig.getAppInfo());
+        context.setVariable("show_button", true);
+        context.setVariable("admin_config", adminConfig);
+        return templateEngine.process("mail/tasks-number-mail", context);
+    }
 }

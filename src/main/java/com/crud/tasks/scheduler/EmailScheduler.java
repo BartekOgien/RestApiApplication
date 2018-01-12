@@ -25,7 +25,7 @@ public class EmailScheduler {
     public void sendInformationEmail() {
         long size = taskRepository.count();
         String task = size==1 ? " task" : " tasks";
-        simpleEmailService.send(new Mail(adminConfig.getAdminMail(), SUBJECT, "Currently in databases you got: " +
+        simpleEmailService.sendTaskNumbers(new Mail(adminConfig.getAdminMail(), SUBJECT, "Currently in databases you got: " +
         size + task));
     }
 }
